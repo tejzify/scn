@@ -51,7 +51,7 @@
 		                Reason : ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
 		                </font>
 		                </p>
-		               </c:if>
+		            </c:if>
 			        <fieldset class="span6">
 			          <h2><small>Login</small></h2>
 			          <div class="input">

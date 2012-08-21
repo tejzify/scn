@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>OnTrac - Dashboard</title>
+		<title>SAI CABLE NETWORK</title>
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -44,16 +44,16 @@
 			<div id="content">
 				<div class="loginbox">
 			      <form action="<c:url value="/j_spring_security_check" />" method="POST">
-			      <p>
+			      	<c:if test="${not empty error}">
+			          	<p>
 		                <font color="red">
 		                Login error. <br />
 		                Reason : ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
 		                </font>
-		                </p>
+		                </p>	
+		              </c:if>
 			        <fieldset class="span6">
 			          <h2><small>Login</small></h2>
-			          <c:if test="${not empty error}">
-		               </c:if>
 			          <div class="input">
 			            <input type="text" name="j_username" placeholder="Enter your username" />
 			          </div>

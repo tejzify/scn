@@ -12,7 +12,7 @@
 		<security:intercept-url pattern="/welcome*" access="ROLE_ADMIN" />
 		<security:form-login login-page="/login" 
 				default-target-url="/welcome.htm"
-				authentication-failure-url="/loginfailed.htm?error=true"/>
+				authentication-failure-url="/loginfailed.htm"/>
 		<security:logout logout-url="/logout" invalidate-session="true"/>
 	</security:http>
 	
